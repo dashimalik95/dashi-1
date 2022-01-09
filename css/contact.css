@@ -1,0 +1,120 @@
+/*BODY*/
+body,html{
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+
+}
+
+
+/*BODY*/
+body{
+  background-color:#F5F8F9;
+  margin-right:0;
+  padding-right:0;
+  text-align: center;
+
+}
+
+
+/*ICON FONT SIZE*/
+
+.icon-size{
+  font-size:30px ;
+}
+
+/*Navbar*/
+
+.navbar{
+  margin-bottom: 50px;
+}
+
+/*CONTACT*/
+
+.contact-title{
+  margin-top:80px;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+
+.contact-title h1{
+  font-size: 2em;
+  line-height: 30px;
+  font-weight: bold;
+}
+.contact-title h2{
+  font-size: 1.1em;
+}
+
+
+form{
+
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+
+.form-control{
+    width: 40%;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color: #495057;
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+
+
+
+/*Contact ENDS*/
+
+/*Footer*/
+
+footer{
+	  position: static;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color:#263238;
+  padding-top: 2rem;
+  margin-top:5.65em;
+}
+
+.footer-copyright{
+  color: #979B9E;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer-link{
+  color: white;
+}
+
+.footer-link:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-icon{
+  padding-right: 20px;
+}
+
+.footer-icon:hover{
+  text-decoration: none;
+}
+
+
+/*Media Queries*/
+
+@media (max-width:812px){
+    .form-control{
+        width:90%;
+    }
+    .btn{
+        margin-top:20px;
+    }
+}
