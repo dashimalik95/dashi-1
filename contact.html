@@ -77,6 +77,11 @@
      </div>
 
       <form netlify method="post" action="contact-form-handler.php" netlify-honeypot="bot-field" data-netlify="true">
+         <p class="hidden">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
   <div class="form-row">
     <div class="col">
       <input name="name" type="text" class="form-control" placeholder="Your Name" required>
