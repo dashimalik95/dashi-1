@@ -76,12 +76,8 @@
  
      </div>
 
-      <form netlify method="post" action="contact-form-handler.php" netlify-honeypot="bot-field" data-netlify="true">
-         <p class="hidden">
-    <label>
-      Don’t fill this out if you’re human: <input name="bot-field" />
-    </label>
-  </p>
+      <form netlify method="post" action="contact-form-handler.php" data-netlify-recaptcha="true" data-netlify="true">
+
   <div class="form-row">
     <div class="col">
       <input name="name" type="text" class="form-control" placeholder="Your Name" required>
@@ -98,6 +94,10 @@
       <textarea name="message" type="text" class="form-control" placeholder="Message" rows="4" required></textarea>
     </div>
     </div>
+
+    <!-- Netlify Recaptcha -->
+
+      <div data-netlify-recaptcha="true"></div>
 
     <div class="form-row">
       <div class="col">
