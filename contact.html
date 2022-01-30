@@ -78,6 +78,16 @@
 
       <form netlify method="post" action="contact-form-handler.php" data-netlify-recaptcha="true" data-netlify="true">
 
+  <!-- Captcha true/false -->
+
+     <div
+        class="g-recaptcha"
+        data-sitekey="your-site-key"
+        data-callback="callback"
+      ></div>
+
+      <!-- Captcha true/false end -->
+
   <div class="form-row">
     <div class="col">
       <input name="name" type="text" class="form-control" placeholder="Your Name" required>
@@ -106,6 +116,15 @@
     </div>
 
 </form>
+
+<!-- JS -->
+
+<script type="text/javascript">
+      function callback() {
+        const submitButton = document.getElementById("submit");
+        submitButton.removeAttribute("disabled");
+      }
+    </script>
 
      <!-- CONTACT ENDS -->
    
