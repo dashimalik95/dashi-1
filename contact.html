@@ -115,7 +115,7 @@
 
     <div class="form-row">
       <div class="col">
-      <button type="submit" class="btn btn-primary mb-2" disabled>Send Message</button>
+      <button type="submit" id="submit-button" class="btn btn-primary mb-2" disabled>Send Message</button>
     </div>
     </div>
 
@@ -125,7 +125,7 @@
 
 <script type="text/javascript">
       function callback() {
-        const submitButton = document.getElementById("submit");
+        const submitButton = document.getElementById("submit-button");
         submitButton.removeAttribute("disabled");
       }
     </script>
