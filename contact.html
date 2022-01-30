@@ -21,7 +21,7 @@
     <!-- Google Fonts -->
 
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
+    
   </head>
   <body>
     <!-- BODY STARTS -->
@@ -75,7 +75,7 @@
  
      </div>
 
-      <form netlify method="post" action="contact-form-handler.php" data-netlify-recaptcha="true" data-netlify="true">
+      <form netlify method="post" data-netlify-recaptcha="true" data-netlify="true">
 
   <!-- Captcha true/false -->
 
@@ -106,24 +106,16 @@
 
     <!-- Netlify Recaptcha -->
 
-    <div style="display: inline-block;" data-netlify-recaptcha="true" data-callback="callback"></div>
+    <div style="display: inline-block;" data-netlify-recaptcha="true"></div>
 
     <div class="form-row">
       <div class="col">
-      <button type="submit" id="submit-button" class="btn btn-primary mb-2" disabled>Send Message</button>
+      <button type="submit" class="btn btn-primary mb-2">Send Message</button>
     </div>
     </div>
 
 </form>
 
-<!-- JS -->
-
-<script type="text/javascript">
-      function callback() {
-        const submitButton = document.getElementById("submit-button");
-        submitButton.removeAttribute("disabled");
-      }
-    </script>
 
      <!-- CONTACT ENDS -->
    
