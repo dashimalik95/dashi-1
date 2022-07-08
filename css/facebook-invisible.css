@@ -1,2 +1,13 @@
 @import url(topics-import.css);
 
+@media (max-width: 812px){
+	.ad-airwatch{
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 812px){
+	.ad-airwatch{
+        margin-left: 80px;
+    }
+}
