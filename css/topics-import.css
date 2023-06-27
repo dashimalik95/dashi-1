@@ -6,6 +6,8 @@ html,body{
 body{
     background-color:#FDFDFD;
     line-height:22px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 /*ICON FONT SIZE*/
